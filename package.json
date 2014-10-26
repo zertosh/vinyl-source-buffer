@@ -3,27 +3,32 @@
   "version": "0.0.1",
   "description": "Convert a text stream into a vinyl pipeline whose content is a buffer",
   "keywords": [
+    "gulp",
+    "vinyl"
   ],
-  "author": "Andres Suarez <zertosh@gmail.com>",
   "homepage": "https://github.com/zertosh/vinyl-source-buffer",
-  "bugs": "https://github.com/zertosh/vinyl-source-buffer/issues",
   "license": "MIT",
+  "author": "Andres Suarez <zertosh@gmail.com>",
+  "files": [
+    "README.md",
+    "vinyl-source-buffer.js"
+  ],
+  "main": "vinyl-source-buffer.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/zertosh/vinyl-source-buffer.git"
   },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
   "dependencies": {
-    "vinyl": "~0.2.3",
-    "through2": "~0.4.1"
+    "vinyl": "^0.4.3",
+    "through2": "^0.6.3"
   },
   "devDependencies": {
-    "mocha": "~1.17.1",
-    "should": "~3.1.2"
+    "tape": "^3.0.1"
   },
   "engines": {
     "node": ">=0.10"
-  },
-  "scripts": {
-    "test": "mocha"
   }
 }
