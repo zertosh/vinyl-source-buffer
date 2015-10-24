@@ -1,5 +1,7 @@
 # vinyl-source-buffer
 
+[![Build Status](https://travis-ci.org/zertosh/vinyl-source-buffer.svg?branch=master)](https://travis-ci.org/zertosh/vinyl-source-buffer)
+
 Convert a text stream into a vinyl pipeline whose content is a buffer. The typical use case being that using a [browserify](https://github.com/substack/node-browserify) stream in a gulp pipeline.
 
 ## Usage
