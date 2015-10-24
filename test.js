@@ -1,7 +1,7 @@
 var File = require('vinyl');
 var fs = require('fs');
 var stream = require('stream');
-var test = require('tape');
+var test = require('tap').test;
 
 var source = require('./');
 
