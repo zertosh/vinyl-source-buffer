@@ -6,29 +6,17 @@
     "gulp",
     "vinyl"
   ],
-  "homepage": "https://github.com/zertosh/vinyl-source-buffer",
   "license": "MIT",
   "author": "Andres Suarez <zertosh@gmail.com>",
-  "files": [
-    "README.md",
-    "vinyl-source-buffer.js"
-  ],
-  "main": "vinyl-source-buffer.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/zertosh/vinyl-source-buffer.git"
-  },
+  "repository": "zertosh/vinyl-source-buffer",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tap test.js"
   },
   "dependencies": {
-    "vinyl": "^0.4.3",
-    "through2": "^0.6.3"
+    "vinyl": "^0.4.0"
   },
   "devDependencies": {
-    "tape": "^3.0.1"
+    "tap": "^2.0.0"
   },
-  "engines": {
-    "node": ">=0.10"
-  }
+  "main": "vinyl-source-buffer.js"
 }
