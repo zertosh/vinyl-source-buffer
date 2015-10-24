@@ -7,7 +7,7 @@ test('vinyl-source-buffer', function(t) {
 
   t.plan(3);
 
-  var source = require('../');
+  var source = require('./');
 
   fs.createReadStream(__filename)
     .pipe(source(__filename))

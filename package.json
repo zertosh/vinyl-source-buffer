@@ -19,7 +19,7 @@
     "url": "git://github.com/zertosh/vinyl-source-buffer.git"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test.js"
   },
   "dependencies": {
     "vinyl": "^0.4.3",
