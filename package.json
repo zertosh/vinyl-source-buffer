@@ -22,7 +22,7 @@
     "test": "tape test.js"
   },
   "dependencies": {
-    "vinyl": "^0.4.3",
+    "vinyl": "^0.4.0",
     "through2": "^0.6.3"
   },
   "devDependencies": {
