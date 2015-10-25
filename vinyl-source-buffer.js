@@ -5,6 +5,9 @@ var path = require('path');
 var stream = require('stream');
 var util = require('util');
 
+module.exports = VinylSourceBuffer;
+util.inherits(VinylSourceBuffer, stream.Transform);
+
 function VinylSourceBuffer(filename, base) {
   if (!(this instanceof VinylSourceBuffer)) {
     return new VinylSourceBuffer(filename, base);
@@ -15,7 +18,6 @@ function VinylSourceBuffer(filename, base) {
   this._filename = filename;
   this.once('end', this._destroy);
 }
-util.inherits(VinylSourceBuffer, stream.Transform);
 
 VinylSourceBuffer.prototype._transform = function(buf, enc, cb) {
   this._chunks.push(buf);
@@ -35,5 +37,3 @@ VinylSourceBuffer.prototype._flush = function(cb) {
 VinylSourceBuffer.prototype._destroy = function() {
   this._base = this._chunks = this._filename = null;
 };
-
-module.exports = VinylSourceBuffer;
