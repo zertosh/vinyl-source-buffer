@@ -13,6 +13,7 @@ function VinylSourceBuffer(filename, base) {
   this._base = base;
   this._chunks = [];
   this._filename = filename;
+  this.once('end', this._destroy);
 }
 util.inherits(VinylSourceBuffer, stream.Transform);
 
@@ -29,6 +30,9 @@ VinylSourceBuffer.prototype._flush = function(cb) {
   });
   this.push(file);
   cb();
+};
+
+VinylSourceBuffer.prototype._destroy = function() {
   this._base = this._chunks = this._filename = null;
 };
 
