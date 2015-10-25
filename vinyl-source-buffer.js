@@ -1,3 +1,5 @@
+'use strict';
+
 var File = require('vinyl');
 var path = require('path');
 var stream = require('stream');
