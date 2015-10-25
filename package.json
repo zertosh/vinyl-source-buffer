@@ -1,6 +1,6 @@
 {
   "name": "vinyl-source-buffer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert a text stream into a vinyl pipeline whose content is a buffer",
   "keywords": [
     "gulp",
