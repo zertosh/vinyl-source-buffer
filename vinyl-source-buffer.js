@@ -23,9 +23,9 @@ VinylSourceBuffer.prototype._flush = function(cb) {
     path: this._filename ? path.resolve(this._filename) : null,
     contents: Buffer.concat(this._chunks)
   });
-  this._chunks = null;
   this.push(file);
   cb();
+  this._filename = this._chunks = null;
 };
 
 module.exports = VinylSourceBuffer;
